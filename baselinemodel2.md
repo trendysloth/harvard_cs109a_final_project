@@ -1,5 +1,5 @@
 ---
-title: Collaborative filtering
+title: Baseline Model 2
 notebook: olives-model.ipynb
 nav_include: 5
 ---
