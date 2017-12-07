@@ -1,6 +1,5 @@
-theme: jekyll-theme-minimal
+theme: jekyll-theme-primer
 title: Yelp Restaurant Recommendations
-
 description: Recommendation
 baseurl:
 markdown: kramdown
