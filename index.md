@@ -1,5 +1,6 @@
 ---
-title: Yelp Restaurant Recommendations 
+title: Yelp Restaurant Recommendations
+nav_include: 1
 ---
 
 <!-- This is the home page

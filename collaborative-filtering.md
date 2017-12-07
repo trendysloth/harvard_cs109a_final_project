@@ -1,7 +1,7 @@
 ---
 title: calculate RMSE for test and train set
 notebook: collaborative-filtering.ipynb
-nav_include: 1
+nav_include: 2
 ---
 
 ## Contents
