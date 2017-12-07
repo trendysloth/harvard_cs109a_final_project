@@ -1,9 +1,6 @@
 theme: jekyll-theme-minimal
-title: EDA
-title: baseline model 1 (arithmetic)
-title: baseline model 2 (ridge)
-title: collaborative filtering
-title: ensemble
+title: collaborative-filtering
+title: baseline-ridge-model
 
 description: Recommendation
 baseurl:
