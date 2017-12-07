@@ -1,5 +1,9 @@
 theme: jekyll-theme-minimal
-title: Support Vector Olives
+title: EDA
+title: Baseline Model 1
+title: Baseline Model 2
+title: Collaborative filtering
+title: Ensemble
 description: Keeping Italian Olives Pure!
 baseurl:
 markdown: kramdown
