@@ -1,7 +1,7 @@
 ---
 title: Baseline Model 2
 notebook: olives-model.ipynb
-nav_include: 5
+nav_include: 4
 ---
 
 ## Contents
