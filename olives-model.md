@@ -1,5 +1,5 @@
 ---
-title: Models
+title: Baseline Model 1
 notebook: olives-model.ipynb
 nav_include: 5
 ---
