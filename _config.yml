@@ -4,7 +4,7 @@ title: Baseline Model 1
 title: Baseline Model 2
 title: Collaborative filtering
 title: Ensemble
-description: Keeping Italian Olives Pure!
+description: Recommendation
 baseurl:
 markdown: kramdown
 kramdown:
