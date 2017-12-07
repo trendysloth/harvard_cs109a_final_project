@@ -1,6 +1,5 @@
 theme: jekyll-theme-minimal
-title: collaborative-filtering
-title: baseline-ridge-model
+title: Yelp Restaurant Recommendations
 
 description: Recommendation
 baseurl:

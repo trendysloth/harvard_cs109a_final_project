@@ -1,5 +1,5 @@
 ---
-title: Ridge CV
+title: Baseline Ridge Model
 notebook: baseline-ridge-model.ipynb
 nav_include: 2
 ---
