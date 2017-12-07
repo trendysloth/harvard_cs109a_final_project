@@ -1,5 +1,5 @@
 ---
-title: Collaborative filtering
+title: Ensemble
 notebook: olives-model.ipynb
 nav_include: 5
 ---
