@@ -33,10 +33,10 @@ Literature Review/Related Work: This could include noting any key papers, texts,
 
  Modeling Approach and Project Trajectory: Include 1) a baseline model for comparison and 2) a description of your implementations beyond the baseline model. Briefly summarize any changes in your project goals or implementation plans you have made along the way. These changes are a natural part of any project, even those that seem the most straightforward at the beginning. The story you tell about how you arrived at your results can powerfully illustrate your process. 
 
->Baseline model 1 (arithmetic)
->Baseline model 2 (ridge regression)
->Collaborative filtering with user-user + restaurant-restaurant similarity matrices
->Ensemble methods : averaging, boosting, linear regression
+- Baseline model 1 (arithmetic)
+- Baseline model 2 (ridge regression)
+- Collaborative filtering with user-user + restaurant-restaurant similarity matrices
+- Ensemble methods : averaging, boosting, linear regression
 
 5. Results, Conclusions, and Future Work: Show and interpret your results. Summarize your results, the strengths and short-comings of your results, and speculate on how you might address these short-comings if given more time.
 
