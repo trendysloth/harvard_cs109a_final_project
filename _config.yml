@@ -1,5 +1,6 @@
 theme: jekyll-theme-primer
 title: Yelp Restaurant Recommendations
+title: Collaborative Filtering
 description: Recommendation
 baseurl:
 markdown: kramdown
