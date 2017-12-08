@@ -42,7 +42,6 @@ http://cambridgespark.com/content/tutorials/implementing-your-own-recommender-sy
 - Baseline model 1( arithmetic) 
 - Baseline model 2 (ridge regression): 
 - In the ridge model, we use indicator variables for the u-th user and m-th item that go into the feature matrix to predict on the stars in the reviews dataset.
-
 - Collaborative filtering with user-user + restaurant-restaurant similarity matrices
 - We implemented a collaborative filtering methods that uses a user-user matrix and a restaurant-restaurant matrix to calculate how each user deviates from the mean of the dataset based their similarity to other users and other restaurants. We used svd (singular value decomposition) for matrix factorization and cosine similarity for similarity matrices
 This method generally produce good results but are not good for cold-start problems in which cases  the users have not rated any restaurants
