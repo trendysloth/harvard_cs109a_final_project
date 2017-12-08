@@ -25,6 +25,8 @@ $$ G_{\mu\nu} + \Lambda g_{\mu\nu}  = 8 \pi T_{\mu\nu} . $$ -->
 
   The literature sources we found during our preliminary research primarily described models developed for the Netflix prize. The winning model developed by the BellKor team was extremely complex, but the authors made it clear that the core of their model’s success was due to the simple baseline strategy that they spent a great deal of time refining. The complex ensembling and boosting algorithms they used only accounted for a few percentage points in performance increase. We decided to take the same approach and focus a large portion of our efforts on our baseline and then build on top of it.
 
+  <img src="images/elite.png" alt="alt text" title="Average stars: elite vs. non-elite" />
+
 ### Literature Review/Related Work: 
 
 >[1] Matrix Factorization for Movie Recommendations in Python. (2016, November 10). Retrieved December 8, 2017, from <https://beckernick.github.io/matrix-factorization-recommender/>
