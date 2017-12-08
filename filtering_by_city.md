@@ -1,6 +1,6 @@
 ---
 nav_include: 3
-title: collaborative-filtering
+title: Filter-data-by-city
 notebook: filtering-by-city.ipynb
 ---
 

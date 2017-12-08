@@ -1,6 +1,6 @@
 ---
-nav_include: 2
-title: baseline-models
+nav_include: 1
+title: Baseline-models
 notebook: baseline-models.ipynb
 ---
 

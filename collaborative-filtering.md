@@ -1,6 +1,6 @@
 ---
-nav_include: 1
-title: collaborative-filtering
+nav_include: 2
+title: Collaborative-filtering
 notebook: collaborative-filtering.ipynb
 ---
 
