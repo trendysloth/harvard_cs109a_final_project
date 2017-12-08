@@ -1,5 +1,5 @@
 ---
-title: Yelp Restaurant Recommendations
+## <center> title: Yelp Restaurant Recommendations </center>
 ---
 
 <!-- This is the home page
@@ -28,7 +28,7 @@ $$ G_{\mu\nu} + \Lambda g_{\mu\nu}  = 8 \pi T_{\mu\nu} . $$ -->
 
 ![Elite status vs. Stars](images/eda_2.png)
 
-### Literature Review/Related Work: 
+### <center> Literature Review/Related Work: </center>
 
 >[1] Matrix Factorization for Movie Recommendations in Python. (2016, November 10). Retrieved December 8, 2017, from <https://beckernick.github.io/matrix-factorization-recommender/>
 
@@ -38,7 +38,7 @@ $$ G_{\mu\nu} + \Lambda g_{\mu\nu}  = 8 \pi T_{\mu\nu} . $$ -->
 >[3] Winning the Netflix Prize: A Summary. (n.d.). Retrieved December 8, 2017, from <http://blog.echen.me/2011/10/24/winning-the-netflix-prize-a-summary/>
 
 
-### Modeling Approach and Project Trajectory:
+### <center> Modeling Approach and Project Trajectory: </center>
 
   Our EDA phase showed us that cities and neighborhoods have independent means and distributions. We would have to filter our recommendations by location for functional recommendation purposes anyways, so we decided to build our data filtering first around cities. Once we select a city, we focus on the reviews data set, and remove any rows from users that occur less than five times to prevent the “cold start” problem. 
   + Baseline model 1( arithmetic) 
@@ -59,7 +59,7 @@ $$ G_{\mu\nu} + \Lambda g_{\mu\nu}  = 8 \pi T_{\mu\nu} . $$ -->
 
   The model was able to be improved by the incorporation of single-variable-decomposition (SVD) into the Ridge-Regression based ensemble model. Because of this, the final implemented model is comprised of a Ridge Regression model trained on the estimated ratings provided by a separate Ridge Regression model, arithmetic mean predictions, and SVD predictions. These baseline models were trained on almost all available user and business data. The final achieved RMSE of this model was 0.727.
 
-### Results, Conclusions, and Future Work: 
+### <center> Results, Conclusions, and Future Work: </center>
 
   Through the generation of an ensemble model that combined Ridge Regression, arithmetic mean estimation, and SVD, we were able to achieve a test set RMSE value of [INSERT TEST RMSE HERE]. The accuracy of this model was higher than any single tested regression model and had a comparable test-set RMSE value to similar recommenders such as those constructed for the Netflix prize. 
 
