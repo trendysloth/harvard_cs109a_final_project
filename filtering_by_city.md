@@ -1,5 +1,5 @@
 ---
-nav_include: 4
+nav_include: 2
 title: Filter-data-by-city
 notebook: filtering-by-city.ipynb
 ---
