@@ -4,7 +4,7 @@ title: Filter-data-by-city
 notebook: filtering-by-city.ipynb
 ---
 
-### <center> Filter data by city </center>
+### Contents
 {:.no_toc}
 *  
 {: toc}

@@ -4,7 +4,7 @@ title: Ensemble
 notebook: ensemble.ipynb
 ---
 
-### <center> Ensemble </center>
+### Contents
 {:.no_toc}
 *  
 {: toc}
