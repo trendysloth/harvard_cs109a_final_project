@@ -3,7 +3,6 @@ nav_include: 1
 notebook: ensemble.ipynb
 ---
 
-### <center> Ensemble </center>
 {:.no_toc}
 *  
 {: toc}
