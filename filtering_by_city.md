@@ -1,11 +1,12 @@
 ---
 nav_include: 2
-
+title: Filter-data-by-city
 notebook: filtering-by-city.ipynb
 ---
 
+### <center> Filter data by city </center>
 {:.no_toc}
-*
+*  
 {: toc}
 
 

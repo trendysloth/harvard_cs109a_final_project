@@ -1,8 +1,10 @@
 ---
 nav_include: 1
+title: Ensemble
 notebook: ensemble.ipynb
 ---
 
+### <center> Ensemble </center>
 {:.no_toc}
 *  
 {: toc}
