@@ -1,5 +1,5 @@
 ---
-## <center> title: Yelp Restaurant Recommendations </center>
+# <center> title: Yelp Restaurant Recommendations </center>
 ---
 
 <!-- This is the home page
@@ -14,11 +14,10 @@ Here is some inline math $\alpha = \frac{\beta}{\gamma}$ and, of-course, E rules
 
 $$ G_{\mu\nu} + \Lambda g_{\mu\nu}  = 8 \pi T_{\mu\nu} . $$ -->
 
-### <center> Problem Statement and Motivation: </center>
-
+## <center> Problem Statement and Motivation: </center>
   Our goal for this project is to build a recommender system for restaurants using publicly available Yelp data. Our motivation is to understand the function of these systems and implement our own approaches based on what we learn from the EDA and what we have learned in the course thus far.
 
-### <center> Introduction and Description of Data: </center>
+## <center> Introduction and Description of Data: </center>
   Recommender systems are present in almost every popular website and app today. Most recently they have received a great deal of media attention due to the way that news articles and other web content is served to users based on their previous online behavior. The most challenging aspect of this project was ensembling the different models we built. We found many different approaches to this problem online and many were good at producing recommendations in certain circumstances, but comparing the different types of error metrics and deciding what to implement into our pipeline was one of the hardest parts. 
 
   Our preliminary EDA revealed that the population of “elite” users within the community of Yelp reviewers introduced some interesting patterns in the data. We found that although elite users only accounted for a small fraction of the total users, they contributed almost half of the restaurant reviews. We also found that the distribution of the star ratings given by elite users was smaller, and the mean was higher. Due to this, we decided to create an additional binary predictor in our dataset that is set true if a user was ever listed as elite.
@@ -28,7 +27,7 @@ $$ G_{\mu\nu} + \Lambda g_{\mu\nu}  = 8 \pi T_{\mu\nu} . $$ -->
 
 ![Elite status vs. Stars](images/eda_2.png)
 
-### <center> Literature Review/Related Work: </center>
+## <center> Literature Review/Related Work: </center>
 
 >[1] Matrix Factorization for Movie Recommendations in Python. (2016, November 10). Retrieved December 8, 2017, from <https://beckernick.github.io/matrix-factorization-recommender/>
 
@@ -38,7 +37,7 @@ $$ G_{\mu\nu} + \Lambda g_{\mu\nu}  = 8 \pi T_{\mu\nu} . $$ -->
 >[3] Winning the Netflix Prize: A Summary. (n.d.). Retrieved December 8, 2017, from <http://blog.echen.me/2011/10/24/winning-the-netflix-prize-a-summary/>
 
 
-### <center> Modeling Approach and Project Trajectory: </center>
+## <center> Modeling Approach and Project Trajectory: </center>
 
   Our EDA phase showed us that cities and neighborhoods have independent means and distributions. We would have to filter our recommendations by location for functional recommendation purposes anyways, so we decided to build our data filtering first around cities. Once we select a city, we focus on the reviews data set, and remove any rows from users that occur less than five times to prevent the “cold start” problem. 
   + Baseline model 1( arithmetic) 
@@ -59,7 +58,7 @@ $$ G_{\mu\nu} + \Lambda g_{\mu\nu}  = 8 \pi T_{\mu\nu} . $$ -->
 
   The model was able to be improved by the incorporation of single-variable-decomposition (SVD) into the Ridge-Regression based ensemble model. Because of this, the final implemented model is comprised of a Ridge Regression model trained on the estimated ratings provided by a separate Ridge Regression model, arithmetic mean predictions, and SVD predictions. These baseline models were trained on almost all available user and business data. The final achieved RMSE of this model was 0.727.
 
-### <center> Results, Conclusions, and Future Work: </center>
+## <center> Results, Conclusions, and Future Work: </center>
 
   Through the generation of an ensemble model that combined Ridge Regression, arithmetic mean estimation, and SVD, we were able to achieve a test set RMSE value of [INSERT TEST RMSE HERE]. The accuracy of this model was higher than any single tested regression model and had a comparable test-set RMSE value to similar recommenders such as those constructed for the Netflix prize. 
 
