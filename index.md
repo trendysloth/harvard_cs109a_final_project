@@ -14,19 +14,17 @@ Here is some inline math $\alpha = \frac{\beta}{\gamma}$ and, of-course, E rules
 
 $$ G_{\mu\nu} + \Lambda g_{\mu\nu}  = 8 \pi T_{\mu\nu} . $$ -->
 
-Final Team Report:
-
-Problem Statement and Motivation: This should be brief and self-contained. 
+### Problem Statement and Motivation: 
 >Our goal for this project is to build a recommender system for restaurants using publicly available Yelp data. Our motivation is to understand the function of these systems and implement our own approaches based on what we learn from the EDA and what we have learned in the course thus far.
 
-Introduction and Description of Data: Description of relevant knowledge. Why is this problem important? Why is it challenging? Introduce the motivations for the project question and how that question was defined through preliminary EDA. 
+### Introduction and Description of Data: 
 >Recommender systems are present in almost every popular website and app today. Most recently they have received a great deal of media attention due to the way that news articles and other web content is served to users based on their previous online behavior. The most challenging aspect of this project was ensembling the different models we built. We found many different approaches to this problem online and many were good at producing recommendations in certain circumstances, but comparing the different types of error metrics and deciding what to implement into our pipeline was one of the hardest parts. 
 
 >Our preliminary EDA revealed that the population of “elite” users within the community of Yelp reviewers introduced some interesting patterns in the data. We found that although elite users only accounted for a small fraction of the total users, they contributed almost half of the restaurant reviews. We also found that the distribution of the star ratings given by elite users was smaller, and the mean was higher. Due to this, we decided to create an additional binary predictor in our dataset that is set true if a user was ever listed as elite.
 
 >The literature sources we found during our preliminary research primarily described models developed for the Netflix prize. The winning model developed by the BellKor team was extremely complex, but the authors made it clear that the core of their model’s success was due to the simple baseline strategy that they spent a great deal of time refining. The complex ensembling and boosting algorithms they used only accounted for a few percentage points in performance increase. We decided to take the same approach and focus a large portion of our efforts on our baseline and then build on top of it.
 
-Literature Review/Related Work: This could include noting any key papers, texts, or websites that you have used to develop your modeling approach, as well as what others have done on this problem in the past. You must properly credit sources. 
+### Literature Review/Related Work: 
 
 >[1] Matrix Factorization for Movie Recommendations in Python. (2016, November 10). Retrieved December 8, 2017, from https://beckernick.github.io/matrix-factorization-recommender/
 
@@ -36,7 +34,7 @@ http://cambridgespark.com/content/tutorials/implementing-your-own-recommender-sy
 >[3] Winning the Netflix Prize: A Summary. (n.d.). Retrieved December 8, 2017, from http://blog.echen.me/2011/10/24/winning-the-netflix-prize-a-summary/
 
 
- Modeling Approach and Project Trajectory: Include 1) a baseline model for comparison and 2) a description of your implementations beyond the baseline model. Briefly summarize any changes in your project goals or implementation plans you have made along the way. These changes are a natural part of any project, even those that seem the most straightforward at the beginning. The story you tell about how you arrived at your results can powerfully illustrate your process. 
+### Modeling Approach and Project Trajectory:
 
 >Our EDA phase showed us that cities and neighborhoods have independent means and distributions. We would have to filter our recommendations by location for functional recommendation purposes anyways, so we decided to build our data filtering first around cities. Once we select a city, we focus on the reviews data set, and remove any rows from users that occur less than five times to prevent the “cold start” problem. 
 - Baseline model 1( arithmetic) 
@@ -54,7 +52,7 @@ This method generally produce good results but are not good for cold-start probl
 
 >The model was able to be improved by the incorporation of single-variable-decomposition (SVD) into the >Ridge-Regression based ensemble model. Because of this, the final implemented model is comprised of a Ridge Regression model trained on the estimated ratings provided by a separate Ridge Regression model, arithmetic mean predictions, and SVD predictions. These baseline models were trained on almost all available user and business data. The final achieved RMSE of this model was [INSERT TEST RMSE HERE].
 
-Results, Conclusions, and Future Work: Show and interpret your results. Summarize your results, the strengths and short-comings of your results, and speculate on how you might address these short-comings if given more time.
+### Results, Conclusions, and Future Work: 
 
 >Through the generation of an ensemble model that combined Ridge Regression, arithmetic mean estimation, and SVD, we were able to achieve a test set RMSE value of [INSERT TEST RMSE HERE]. The accuracy of this model was higher than any single tested regression model and had a comparable test-set RMSE value to similar recommenders such as those constructed for the Netflix prize. 
 
