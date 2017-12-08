@@ -1,6 +1,6 @@
 ---
 nav_include: 1
-title: calculate RMSE for test and train set
+title: collaborative-filtering
 notebook: collaborative-filtering.ipynb
 ---
 
