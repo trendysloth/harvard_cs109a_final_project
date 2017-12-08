@@ -41,21 +41,23 @@ $$ G_{\mu\nu} + \Lambda g_{\mu\nu}  = 8 \pi T_{\mu\nu} . $$ -->
 ### Modeling Approach and Project Trajectory:
 
   Our EDA phase showed us that cities and neighborhoods have independent means and distributions. We would have to filter our recommendations by location for functional recommendation purposes anyways, so we decided to build our data filtering first around cities. Once we select a city, we focus on the reviews data set, and remove any rows from users that occur less than five times to prevent the “cold start” problem. 
+  + Baseline model 1( arithmetic) 
+  	  - We adapted a method we learned from the Netflix prize paper and calculated the deviations from the global mean for each user and business in the dataframe. We initially thought we would supplement use a KNN based collaborative filtering model to supplement our arithmetic baseline, but we found that matrix factorization served the save purpose and was simpler to implement.
 
-  In the arithmetic baseline code, we are adapting a method we learned from the Netflix prize paper and calculating the deviations from the global mean for each user and business in the dataframe. We initially thought we would supplement use a KNN based collaborative filtering model to supplement our arithmetic baseline, but we found that matrix factorization served the save purpose and was simpler to implement.
-  
-  In the ridge model, we use indicator variables for the u-th user and m-th item that go into the feature matrix to predict on the stars in the reviews dataset.
+  + Baseline model 2 (ridge regression): 
+	  - In the ridge model, we use indicator variables for the u-th user and m-th item that go into the feature matrix to predict on the stars in the reviews dataset.
+	  
+  + Collaborative filtering with user-user + restaurant-restaurant similarity matrices
+	  - We implemented a collaborative filtering methods that uses a user-user matrix and a restaurant-restaurant matrix to calculate how each user deviates from the mean of the dataset based their similarity to other users and other restaurants. We used svd (singular value decomposition) for matrix factorization and cosine similarity for similarity matrices
+	  - This method generally produce good results but are not good for cold-start problems in which cases  the users have not rated any restaurants
 
-  We implemented a collaborative filtering methods that uses a user-user matrix and a restaurant-restaurant matrix to calculate how each user deviates from the mean of the dataset based their similarity to other users and other restaurants. We used svd (singular value decomposition) for matrix factorization and cosine similarity for similarity matrices. This method generally produces good results but is not good for cold-start problems. 
-
-  Initial baselines from arithmetic mean prediction and Ridge Regression were used as predictors in an ensemble regression model. An ensemble model was constructed by averaging the output predictions of each model. This mean-ensemble model outperformed both individual models as quantified by RMSE.
+  Initial baselines from arithmetic mean prediction and Ridge Regression were used as predictors an ensemble regression model. An ensemble model was constructed by averaging the output predictions of each model. This mean-ensemble model outperformed both individual models as quantified by RMSE.
 
   Linear Regression, Ridge Regression, Lasso Regression, K-Nearest-Neighbors (KNN), and Random Forest approaches were also trained on the predictions of the arithmetic and Ridge models to predict the target star value. For Random Forest and KNN models, neighbor and estimator counts were tuned to find a minimum RMSE value on the test set. Of each of these models, Ridge Regression scored obtained the lowest RMSE followed by Linear Regression and outperformed the mean-ensemble model.
 
   The predictions of these models were in turn used to create a second meta-model. KNN and Random forest estimators were excluded from this due to exceptionally poor RMSE scores. A Ridge Regression model was subsequently trained using the outputs of the Linear, Ridge, Lasso, and previous baseline predictions as predictors. Ridge Regression was selected due to its consistently low RMSE values. This meta-model did not outperform the previous ensemble method and the original Ridge-Regression based ensemble method was selected as a baseline model.
 
   The model was able to be improved by the incorporation of single-variable-decomposition (SVD) into the Ridge-Regression based ensemble model. Because of this, the final implemented model is comprised of a Ridge Regression model trained on the estimated ratings provided by a separate Ridge Regression model, arithmetic mean predictions, and SVD predictions. These baseline models were trained on almost all available user and business data. The final achieved RMSE of this model was 0.727.
-
 
 ### Results, Conclusions, and Future Work: 
 
