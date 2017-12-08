@@ -38,6 +38,6 @@ Literature Review/Related Work: This could include noting any key papers, texts,
 - Collaborative filtering with user-user + restaurant-restaurant similarity matrices
 - Ensemble methods : averaging, boosting, linear regression
 
-5. Results, Conclusions, and Future Work: Show and interpret your results. Summarize your results, the strengths and short-comings of your results, and speculate on how you might address these short-comings if given more time.
+Results, Conclusions, and Future Work: Show and interpret your results. Summarize your results, the strengths and short-comings of your results, and speculate on how you might address these short-comings if given more time.
 
 >If given more time, we would try out more ensemble methods such as 
