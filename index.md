@@ -22,10 +22,12 @@ $$ G_{\mu\nu} + \Lambda g_{\mu\nu}  = 8 \pi T_{\mu\nu} . $$ -->
   <p> Recommender systems are present in almost every popular website and app today. Most recently they have received a great deal of media attention due to the way that news articles and other web content is served to users based on their previous online behavior. The most challenging aspect of this project was ensembling the different models we built. We found many different approaches to this problem online and many were good at producing recommendations in certain circumstances, but comparing the different types of error metrics and deciding what to implement into our pipeline was one of the hardest parts. </p>
 
   Our preliminary EDA revealed that the population of “elite” users within the community of Yelp reviewers introduced some interesting patterns in the data. We found that although elite users only accounted for a small fraction of the total users, they contributed almost half of the restaurant reviews. We also found that the distribution of the star ratings given by elite users was smaller, and the mean was higher. Due to this, we decided to create an additional binary predictor in our dataset that is set true if a user was ever listed as elite.
-<img src="images/reviews.png" alt="alt text" title="Business average ratings vs review counts" />
+
+  <img src="images/reviews.png" alt="alt text" title="Business average ratings vs review counts" />
+
   The literature sources we found during our preliminary research primarily described models developed for the Netflix prize. The winning model developed by the BellKor team was extremely complex, but the authors made it clear that the core of their model’s success was due to the simple baseline strategy that they spent a great deal of time refining. The complex ensembling and boosting algorithms they used only accounted for a few percentage points in performance increase. We decided to take the same approach and focus a large portion of our efforts on our baseline and then build on top of it.
 
-<img src="images/elite.png" alt="alt text" title="Average stars: elite vs. non-elite" />
+  <img src="images/elite.png" alt="alt text" title="Average stars: elite vs. non-elite" />
 
 
 ### Literature Review/Related Work: 
