@@ -15,7 +15,7 @@ Here is some inline math $\alpha = \frac{\beta}{\gamma}$ and, of-course, E rules
 $$ G_{\mu\nu} + \Lambda g_{\mu\nu}  = 8 \pi T_{\mu\nu} . $$ -->
 
 ### Problem Statement and Motivation: 
-======
+
 ⋅⋅⋅Our goal for this project is to build a recommender system for restaurants using publicly available Yelp data. Our motivation is to understand the function of these systems and implement our own approaches based on what we learn from the EDA and what we have learned in the course thus far.
 
 ### Introduction and Description of Data: 
