@@ -138,20 +138,6 @@ train = train[train['user_id'].isin(test['user_id'])]
 
 
 ```python
-#len(list(set(train['business_id'])))
-```
-
-
-
-
-```python
-#len(list(set(test['business_id'])))
-```
-
-
-
-
-```python
 #FORMULA TO RETURN VECTORS OF PREDICTED and ACTUAL VALUES
 def baseline_predictions(train,test):
     user_ids = list(set(train['user_id']))
@@ -270,6 +256,7 @@ def RMSE(results):
 
 
 ```python
+#RMSE of the arithmetic baselines on the test set:
 RMSE(test_results)
 ```
 
@@ -284,6 +271,7 @@ RMSE(test_results)
 
 
 ```python
+#RMSE of the arithmetic baselines on the train set:
 RMSE(train_results)
 ```
 
@@ -697,7 +685,7 @@ def RMSE(actual,predicted):
 
 
 ```python
-#Calculating the RMSE on the test set
+#Calculating the RMSE on the test set using Ridge
 RMSE(y_test,ridge_preds_test)
 ```
 
@@ -712,7 +700,7 @@ RMSE(y_test,ridge_preds_test)
 
 
 ```python
-#Calculating the RMSE on the train set
+#Calculating the RMSE on the train set using Ridge
 RMSE(y_train,ridge_preds_train)
 ```
 
@@ -885,6 +873,7 @@ def RMSE(actual,predicted):
 
 
 ```python
+#RMSE on the test set using SVD
 RMSE(test_results_svd['actual_values'],test_results_svd['predicted_values'])
 ```
 
@@ -899,6 +888,7 @@ RMSE(test_results_svd['actual_values'],test_results_svd['predicted_values'])
 
 
 ```python
+#RMSE on the train set using SVD
 RMSE(train_results_svd['actual_values'],train_results_svd['predicted_values'])
 ```
 
@@ -940,6 +930,7 @@ rm.fit(x_train_ensemble, y_train)
 train_predicted_scores_Ridge = rm.predict(x_train_ensemble)
 test_predicted_scores_Ridge = rm.predict(x_test_ensemble)
 
+#test RMSE of the three approaches ensembled using Ridge
 RMSE(y_test,test_predicted_scores_Ridge)
 ```
 
