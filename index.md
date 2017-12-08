@@ -14,11 +14,11 @@ Here is some inline math $\alpha = \frac{\beta}{\gamma}$ and, of-course, E rules
 
 $$ G_{\mu\nu} + \Lambda g_{\mu\nu}  = 8 \pi T_{\mu\nu} . $$ -->
 
-### Problem Statement and Motivation: 
+### <center> Problem Statement and Motivation: </center>
 
   Our goal for this project is to build a recommender system for restaurants using publicly available Yelp data. Our motivation is to understand the function of these systems and implement our own approaches based on what we learn from the EDA and what we have learned in the course thus far.
 
-### Introduction and Description of Data: 
+### <center> Introduction and Description of Data: </center>
   Recommender systems are present in almost every popular website and app today. Most recently they have received a great deal of media attention due to the way that news articles and other web content is served to users based on their previous online behavior. The most challenging aspect of this project was ensembling the different models we built. We found many different approaches to this problem online and many were good at producing recommendations in certain circumstances, but comparing the different types of error metrics and deciding what to implement into our pipeline was one of the hardest parts. 
 
   Our preliminary EDA revealed that the population of “elite” users within the community of Yelp reviewers introduced some interesting patterns in the data. We found that although elite users only accounted for a small fraction of the total users, they contributed almost half of the restaurant reviews. We also found that the distribution of the star ratings given by elite users was smaller, and the mean was higher. Due to this, we decided to create an additional binary predictor in our dataset that is set true if a user was ever listed as elite.
@@ -46,7 +46,7 @@ $$ G_{\mu\nu} + \Lambda g_{\mu\nu}  = 8 \pi T_{\mu\nu} . $$ -->
 
   + Baseline model 2 (ridge regression): 
 	  - In the ridge model, we use indicator variables for the u-th user and m-th item that go into the feature matrix to predict on the stars in the reviews dataset.
-	  
+
   + Collaborative filtering with user-user + restaurant-restaurant similarity matrices
 	  - We implemented a collaborative filtering methods that uses a user-user matrix and a restaurant-restaurant matrix to calculate how each user deviates from the mean of the dataset based their similarity to other users and other restaurants. We used svd (singular value decomposition) for matrix factorization and cosine similarity for similarity matrices
 	  - This method generally produce good results but are not good for cold-start problems in which cases  the users have not rated any restaurants
