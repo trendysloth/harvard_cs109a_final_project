@@ -26,7 +26,7 @@ $$ G_{\mu\nu} + \Lambda g_{\mu\nu}  = 8 \pi T_{\mu\nu} . $$ -->
 
   The literature sources we found during our preliminary research primarily described models developed for the Netflix prize. The winning model developed by the BellKor team was extremely complex, but the authors made it clear that the core of their model’s success was due to the simple baseline strategy that they spent a great deal of time refining. The complex ensembling and boosting algorithms they used only accounted for a few percentage points in performance increase. We decided to take the same approach and focus a large portion of our efforts on our baseline and then build on top of it.
 
-![Elite status vs. Stars](images/eda.png)
+![Elite status vs. Stars](images/eda_2.png)
 
 ### Literature Review/Related Work: 
 
