@@ -1,5 +1,5 @@
 ---
-nav_include: 1
+nav_include: 4
 title: Ensemble
 notebook: ensemble.ipynb
 ---
