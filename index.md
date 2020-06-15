@@ -1,5 +1,5 @@
 ---
-## <center> title: Yelp Restaurant Recommendations </center>
+## <center> Yelp Restaurant Recommendations </center>
 ---
 
 <!-- This is the home page
